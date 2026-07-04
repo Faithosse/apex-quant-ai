@@ -2,11 +2,7 @@
 
 
 
-Automated algorithmic trading bot for Alpaca paper trading.
-
-Fetches market data, calculates technical indicators, scores signals,
-
-and executes BUY/SELL orders with risk management.
+Automated algorithmic trading bot for Alpaca paper trading. Fetches market data, calculates technical indicators, scores signals, and executes BUY/SELL orders with risk management.
 
 
 
@@ -36,23 +32,27 @@ and executes BUY/SELL orders with risk management.
 
 
 
-&#x20;   core/engine.py          Main trading loop, runs every 60 seconds
+| File | Purpose |
 
-&#x20;   data/data\_loader.py       Fetches bars from Alpaca, adds indicators
+|------|---------|
 
-&#x20;   strategies/scalper.py     Signal scoring engine (0-100)
+| core/engine.py | Main trading loop, runs every 60 seconds |
 
-&#x20;   ai/filter.py              Final approval gate before execution
+| data/data\_loader.py | Fetches bars from Alpaca, adds indicators |
 
-&#x20;   risk/risk\_manager.py      Tracks positions, stop loss, take profit
+| strategies/scalper.py | Signal scoring engine (0-100) |
 
-&#x20;   execution/broker.py         Sends orders to Alpaca
+| ai/filter.py | Final approval gate before execution |
 
-&#x20;   journal/trade\_logger.py     Records entries and exits to JSON
+| risk/risk\_manager.py | Tracks positions, stop loss, take profit |
 
-&#x20;   backsetting/engine.py       Backtests strategy on historical data
+| execution/broker.py | Sends orders to Alpaca |
 
-&#x20;   config/settings.py          All tunable parameters
+| journal/trade\_logger.py | Records entries and exits to JSON |
+
+| backsetting/engine.py | Backtests strategy on historical data |
+
+| config/settings.py | All tunable parameters |
 
 
 
@@ -64,7 +64,7 @@ and executes BUY/SELL orders with risk management.
 
 
 
-&#x20;   pip install -r requirements.txt
+&#x20;      pip install -r requirements.txt
 
 
 
@@ -72,13 +72,11 @@ and executes BUY/SELL orders with risk management.
 
 
 
-&#x20;   copy .env.example .env
+&#x20;      copy .env.example .env
 
 
 
-&#x20;   Then edit .env and paste your keys from:
-
-&#x20;   https://app.alpaca.markets/paper/dashboard
+&#x20;  Then edit .env and paste your keys from: https://app.alpaca.markets/paper/dashboard
 
 
 
@@ -86,11 +84,11 @@ and executes BUY/SELL orders with risk management.
 
 
 
-&#x20;   python test\_connection.py
+&#x20;      python test\_connection.py
 
 
 
-&#x20;   Should show: Account connected, equity $100000.00
+&#x20;  Should show: Account connected, equity $100000.00
 
 
 
@@ -102,9 +100,7 @@ and executes BUY/SELL orders with risk management.
 
 
 
-Checks strategy on 30 days of historical data.
-
-Only trade live if win rate \&gt; 50% and profit factor \&gt; 1.2.
+Checks strategy on 30 days of historical data. Only trade live if win rate \&gt; 50% and profit factor \&gt; 1.2.
 
 
 
@@ -134,13 +130,17 @@ Loops every 60 seconds:
 
 
 
-&#x20;   python test\_connection.py              Verify broker link
+| Command | Purpose |
 
-&#x20;   python run\_backtest.py                 Test strategy on history
+|---------|---------|
 
-&#x20;   python main.py                         Start live paper trading
+| python test\_connection.py | Verify broker link |
 
-&#x20;   python close\_trade.py ETHUSD           Close a position manually
+| python run\_backtest.py | Test strategy on history |
+
+| python main.py | Start live paper trading |
+
+| python close\_trade.py ETHUSD | Close a position manually |
 
 
 
@@ -148,17 +148,21 @@ Loops every 60 seconds:
 
 
 
-&#x20;   SYMBOLS = \["BTC/USD", "ETH/USD", "AAPL", "TSLA"]
+| Setting | Default | Description |
 
-&#x20;   SCORE\_THRESHOLD = 75                   Min score to trade
+|---------|---------|-------------|
 
-&#x20;   MAX\_POSITIONS = 3                      Max open at once
+| SYMBOLS | BTC/USD, ETH/USD, AAPL, TSLA | Assets to trade |
 
-&#x20;   STOP\_LOSS\_PCT = 0.02                   2% stop loss
+| SCORE\_THRESHOLD | 75 | Min score to trade |
 
-&#x20;   TAKE\_PROFIT\_PCT = 0.04                 4% take profit
+| MAX\_POSITIONS | 3 | Max open at once |
 
-&#x20;   QTY\_PER\_TRADE = 1                      Shares/coins per order
+| STOP\_LOSS\_PCT | 0.02 | 2% stop loss |
+
+| TAKE\_PROFIT\_PCT | 0.04 | 4% take profit |
+
+| QTY\_PER\_TRADE | 1 | Shares/coins per order |
 
 
 
@@ -171,14 +175,4 @@ Loops every 60 seconds:
 \- Alpaca paper trading account (free)
 
 \- Windows / Mac / Linux
-
-\---
-
-.env.example
-
-APCA\_API\_KEY=your\_alpaca\_key\_here
-
-APCA\_API\_SECRET=your\_alpaca\_secret\_here
-
-APCA\_PAPER=true
 
