@@ -63,6 +63,10 @@ Loops every 60 seconds:
 | `python run_backtest.py` | Test strategy on history |
 | `python main.py` | Start live paper trading |
 | `python close_trade.py ETHUSD` | Close a position manually |
+| `python check_position.py BTC/USD` | check a position manually |
+| `python check_position.py ALL` | check all position manually |
+
+
 
 ## Tunable Settings (config/settings.py)
 
