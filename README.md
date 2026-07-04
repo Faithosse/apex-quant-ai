@@ -31,7 +31,7 @@ Automated algorithmic trading bot for Alpaca paper trading. Fetches market data,
 
 **1. Install dependencies**
 pip install -r requirements.txt
-venv\Scripts\activate to activate enviroment if not created use python -m venv venv
+**to activate enviroment** venv\Scripts\activate  **if not created use** python -m venv venv **this will create then activate with the former**
 
 **2. Add your Alpaca API keys**
 copy .env.example .env
