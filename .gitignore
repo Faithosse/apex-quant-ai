@@ -1,0 +1,12 @@
+.env
+venv/
+env/
+__pycache__/
+*.pyc
+backsetting/reports/
+journal/trades.json
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
