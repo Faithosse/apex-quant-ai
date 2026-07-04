@@ -1,0 +1,83 @@
+[
+  {
+    "timestamp": "2026-07-04T15:35:46.670581",
+    "type": "ENTRY",
+    "symbol": "BTC/USD",
+    "entry_price": 62718.3445,
+    "qty": 1,
+    "score": 50,
+    "reasons": [
+      "EMA9 > EMA21 (bullish)",
+      "MACD crossing up",
+      "Low volatility (good)"
+    ]
+  },
+  {
+    "timestamp": "2026-07-04T15:35:46.952872",
+    "type": "ENTRY",
+    "symbol": "ETH/USD",
+    "entry_price": 1746.3,
+    "qty": 1,
+    "score": 45,
+    "reasons": [
+      "RSI weak (32.9)",
+      "EMA9 < EMA21 (bearish)",
+      "Volume spike confirmed",
+      "Low volatility (good)"
+    ]
+  },
+  {
+    "timestamp": "2026-07-04T16:14:15.968113",
+    "type": "ENTRY",
+    "symbol": "BTC/USD",
+    "entry_price": 62718.3445,
+    "qty": 1,
+    "score": 50,
+    "reasons": [
+      "EMA9 > EMA21 (bullish)",
+      "MACD crossing up",
+      "Low volatility (good)"
+    ]
+  },
+  {
+    "timestamp": "2026-07-04T16:14:16.257998",
+    "type": "ENTRY",
+    "symbol": "ETH/USD",
+    "entry_price": 1746.3,
+    "qty": 1,
+    "score": 45,
+    "reasons": [
+      "RSI weak (32.9)",
+      "EMA9 < EMA21 (bearish)",
+      "Volume spike confirmed",
+      "Low volatility (good)"
+    ]
+  },
+  {
+    "timestamp": "2026-07-04T16:44:10.973040",
+    "type": "ENTRY",
+    "symbol": "BTC/USD",
+    "entry_price": 62718.3445,
+    "qty": 1,
+    "score": 50,
+    "reasons": [
+      "EMA9 > EMA21 (bullish)",
+      "MACD crossing up",
+      "Low volatility (good)"
+    ]
+  },
+  {
+    "timestamp": "2026-07-04T16:44:11.250113",
+    "type": "ENTRY",
+    "symbol": "ETH/USD",
+    "entry_price": 1746.3,
+    "qty": 1,
+    "score": 45,
+    "reasons": [
+      "RSI weak (32.9)",
+      "EMA9 < EMA21 (bearish)",
+      "Volume spike confirmed",
+      "Low volatility (good)"
+    ]
+  }
+]
