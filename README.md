@@ -65,6 +65,7 @@ Loops every 60 seconds:
 | `python close_trade.py ETHUSD` | Close a position manually |
 | `python check_position.py BTC/USD` | check a position manually |
 | `python check_position.py ALL` | check all position manually |
+| `python check_alpaca_assets.py` | check all tradeable asset |
 
 
 
